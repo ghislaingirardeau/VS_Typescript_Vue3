@@ -3,9 +3,11 @@
 This is the boilerplate code for the TypeScript with Vue.js 3 Course.
 
 ## How to Install
+
 ```sh
-npx degit vueschool/ts-vue-boilerplate 
+npx degit vueschool/ts-vue-boilerplate
 ```
+
 ```sh
 npm install
 npm run dev
@@ -28,3 +30,9 @@ npm run build
 ```sh
 npm run lint
 ```
+
+### Prettier
+
+- formater par defaut du profile vue3 est prettier
+- syntax terminal dans le package.json "format"
+- utiliser prettierrc.json poru changer les instructions du format des scripts js

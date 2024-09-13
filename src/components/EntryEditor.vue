@@ -1,19 +1,19 @@
 <script lang="ts" setup>
-import EmojiField from "@/components/EmojiField.vue";
-import ArrowCircleRight from "@/assets/icons/arrow-circle-right.svg";
+import EmojiField from '@/components/EmojiField.vue';
+import ArrowCircleRight from '@/assets/icons/arrow-circle-right.svg';
 
-import { ref, computed, onMounted } from "vue";
-import type { Ref } from "vue";
-import Entry from "@/types/Entry";
-import type Emoji from "../types/Emoji";
+import { ref, computed, onMounted } from 'vue';
+import type { Ref } from 'vue';
+import Entry from '@/types/Entry';
+import type Emoji from '../types/Emoji';
 
-import { inject } from "vue";
-import { userInjectionKey } from "../keyInjections";
+import { inject } from 'vue';
+import { userInjectionKey } from '../keyInjections';
 
 const injectUser = inject(userInjectionKey);
 
 // --------------------- DATA ---------------------
-const body = ref("");
+const body = ref('');
 // const emoji: Ref<Emoji | null> = ref(null);
 // OU (pas besoin de faire l'import dans ce cas)
 const emoji = ref<Emoji | null>(null);
@@ -50,14 +50,14 @@ const handletextInput = (e: Event) => {
 
 const handleSubmit = () => {
   // je n'ai pas acces à $emit, donc mettre defineEmits dans une const emit que je peux appeler ensuite
-  emit("create", {
+  emit('create', {
     body: body.value,
     emoji: emoji.value,
     createdAt: new Date(),
     id: Math.random(),
     userId: 1,
   });
-  body.value = "";
+  body.value = '';
   emoji.value = null;
 };
 </script>

@@ -1,9 +1,9 @@
-import Emoji from "@/types/Emoji";
-import type { Component } from "vue";
-import { reactive } from "vue";
+import Emoji from '@/types/Emoji';
+import type { Component } from 'vue';
+import { reactive } from 'vue';
 
 const files: { [key: string]: unknown } = import.meta.glob(
-  "../assets/icons/emojis/*.svg",
+  '../assets/icons/emojis/*.svg',
   { eager: true },
 );
 
@@ -12,8 +12,8 @@ export default function UseEmojis() {
   for (const path in files) {
     const component = files[path] as Component;
     const name = path
-      .replace("../assets/icons/emojis/", "")
-      .replace("-emoji.svg", "");
+      .replace('../assets/icons/emojis/', '')
+      .replace('-emoji.svg', '');
     emojis.push({ name, component });
   }
   /**

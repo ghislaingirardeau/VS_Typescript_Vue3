@@ -9,7 +9,7 @@ import { userInjectionKey } from './keyInjections';
 import User from './types/User';
 import Entry from './types/Entry';
 
-// --------------------- PROVIDE & INJECT -----------------------
+// --------------------- PROVIDE & INJECT ------------------------
 // to make the variable accessible to all children of the component
 const user: User = reactive({
   id: 1,
@@ -38,7 +38,9 @@ const handleCreateEntry = (entry: Entry) => {
     <EntryEditor @create="handleCreateEntry" />
 
     <ul>
-      <li v-for="card in cards" :key="card.id">
+      <li
+        v-for="card in cards"
+        :key="card.id">
         <EntryCard :entry="card" />
       </li>
     </ul>

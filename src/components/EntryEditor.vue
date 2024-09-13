@@ -62,14 +62,15 @@ const handleSubmit = () => {
 </script>
 <template>
   <!-- si je veux appeler le emit dans le html <form class="entry-form" @submit.prevent="$emit('create', {...})"> -->
-  <form class="entry-form" @submit.prevent="handleSubmit">
+  <form
+    class="entry-form"
+    @submit.prevent="handleSubmit">
     <!-- value au lieu de v-model, pour récupérer l'event la value de l'input lors de l'event keyup -->
     <textarea
       ref="textArea"
       :value="body"
       :placeholder="`New Journal Entry for ${injectUser?.username || 'anonymous'}`"
-      @keyup="handletextInput"
-    />
+      @keyup="handletextInput" />
 
     <EmojiField v-model="emoji" />
 

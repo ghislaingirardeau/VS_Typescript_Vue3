@@ -18,7 +18,6 @@ defineEmits(['update:modelValue']);
           'update:modelValue',
           emoji.name === modelValue ? null : emoji.name,
         )
-      "
-    />
+      " />
   </div>
 </template>

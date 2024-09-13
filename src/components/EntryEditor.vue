@@ -3,7 +3,6 @@ import EmojiField from '@/components/EmojiField.vue';
 import ArrowCircleRight from '@/assets/icons/arrow-circle-right.svg';
 
 import { ref, computed, onMounted } from 'vue';
-import type { Ref } from 'vue';
 import Entry from '@/types/Entry';
 import type Emoji from '../types/Emoji';
 

@@ -31,6 +31,17 @@ npm run build
 npm run lint
 ```
 
+la config de base est dans .eslintrc
+https://eslint.vuejs.org/
+
+settings.json: on save fix eslint error
+
+```json
+"editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+```
+
 ### Prettier
 
 - formater par defaut du profile vue3 est prettier

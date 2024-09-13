@@ -10,7 +10,7 @@ import { userInjectionKey } from '../keyInjections';
 const injectUser = inject(userInjectionKey);
 
 // --------------------- PROPS ---------------------
-const props = defineProps<{
+defineProps<{
   entry: Entry;
 }>();
 </script>

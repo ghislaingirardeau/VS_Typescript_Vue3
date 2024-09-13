@@ -47,3 +47,5 @@ settings.json: on save fix eslint error
 - formater par defaut du profile vue3 est prettier
 - syntax terminal dans le package.json "format"
 - utiliser prettierrc.json poru changer les instructions du format des scripts js
+
+**si plein de warning dans les fichier, run npm format et stage => warnin disappear & no need to commit**

@@ -49,3 +49,18 @@ settings.json: on save fix eslint error
 - utiliser prettierrc.json poru changer les instructions du format des scripts js
 
 **si plein de warning dans les fichier, run npm format et stage => warnin disappear & no need to commit**
+
+### Custom snippet
+
+**les snippets ne sont pas partagé entre les profils**
+
+- select all the code
+- ctrl + shift + p
+- generate Snippet (extension à installer snippet generator)
+- give name and prefix => enter & it's go to the clipboard
+- ctrl + shift + p
+- configure snippet: open the write file, and paste the generate
+  - if snippet to type in global vue file (comme vbase) => vue.json
+  - if snippet to type in template vue file => html.json
+  - if snippet to type in script lang ts vue file => typescript.json
+  - ...

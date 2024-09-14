@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+//TODO: format import
 import EmojiField from '@/components/EmojiField.vue';
 import ArrowCircleRight from '@/assets/icons/arrow-circle-right.svg';
 
@@ -81,3 +82,8 @@ const handleSubmit = () => {
     </div>
   </form>
 </template>
+
+<style>
+div {
+}
+</style>

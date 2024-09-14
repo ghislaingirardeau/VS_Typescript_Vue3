@@ -1,0 +1,27 @@
+// TEST REST CLIENT ENABLE
+
+###
+
+GET https://jsonplaceholder.typicode.com/todos HTTP/1.1
+
+### CREATE
+
+POST https://jsonplaceholder.typicode.com/todos HTTP/1.1
+content-type: application/json
+
+{
+    "title": "new title"
+}
+
+### UPDATE
+
+PUT https://jsonplaceholder.typicode.com/todos/1 HTTP/1.1
+content-type: application/json
+
+{
+    "title": "UPDATE title"
+}
+
+### DELETE
+
+DELETE https://jsonplaceholder.typicode.com/todos/1 HTTP/1.1

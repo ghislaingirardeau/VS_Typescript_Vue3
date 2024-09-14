@@ -1,31 +1,6 @@
-# Boilerplate Code for Typescript with Vue.js 3 Course
+# Vue vs code config
 
-This is the boilerplate code for the TypeScript with Vue.js 3 Course.
-
-## How to Install
-
-```sh
-npx degit vueschool/ts-vue-boilerplate
-```
-
-```sh
-npm install
-npm run dev
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
+## Lint with [ESLint](https://eslint.org/)
 
 ```sh
 npm run lint
@@ -42,7 +17,7 @@ settings.json: on save fix eslint error
   },
 ```
 
-### Prettier
+## Prettier
 
 - formater par defaut du profile vue3 est prettier
 - syntax terminal dans le package.json "format"
@@ -50,7 +25,9 @@ settings.json: on save fix eslint error
 
 **si plein de warning dans les fichier, run npm format et stage => warnin disappear & no need to commit**
 
-### Custom snippet
+## Custom snippet
+
+clean auto-complete : settings => suggest => list des suggestions à montrer
 
 **les snippets ne sont pas partagé entre les profils**
 
@@ -64,3 +41,28 @@ settings.json: on save fix eslint error
   - if snippet to type in template vue file => html.json
   - if snippet to type in script lang ts vue file => typescript.json
   - ...
+
+## Debugger vs code
+
+- Mettre le breakpoint dans la function et **surtout apres** variable que l'on souhaite observer
+- Ouvrir javascript debugger et taper: **npm run dev**
+- Le site est alors ouvert sur le browser, sera en pause sur le break point et retournera dans vscode pour debugger
+
+- à la modif du script, le site et le debugger se relance
+- peut faire la meme chose dans une fonction
+
+on peut alors naviguer normalement sur le site, dés qu'un beakpoint sera retrouvé, le debug de vs code sera alors affiché
+
+## Shortcup keyboard
+
+- ctrl p => rechercher un fichier dans le projet
+- ctrl + shift + arrow => select block of text
+- alt + arrouw move selected block of code
+
+## Style
+
+extension incrementor
+
+## Html
+
+p{hello} => <p>hello</p>

@@ -2,26 +2,12 @@
 import TheHeader from '@/components/TheHeader.vue';
 import EntryEditor from './components/EntryEditor.vue';
 import EntryCard from '@/components/EntryCard.vue';
-import MountainsList from '@/components/MountainsList.vue';
 
-import { reactive, provide, ref, computed, defineAsyncComponent } from 'vue';
+import { reactive, provide, ref, computed } from 'vue';
 import { userInjectionKey } from './keyInjections';
 
 import User from './types/User';
 import Entry from './types/Entry';
-
-// const MountainsList = defineAsyncComponent(
-//   () => import('./components/mountainsList.vue'),
-// );
-
-// --------------DEBUGGER TEST ---------------
-const a = ref(1);
-const b = ref(2);
-const show = ref(false);
-
-const c = computed(() => {
-  return a.value + b.value;
-});
 
 // --------------------- PROVIDE & INJECT ------------------------
 // to make the variable accessible to all children of the component
@@ -58,12 +44,6 @@ const handleCreateEntry = (entry: Entry) => {
         <EntryCard :entry="card" />
       </li>
     </ul>
-
-    <div>
-      <h1>Dynamic import</h1>
-      <MountainsList v-if="show" />
-      <button @click="show = !show">Show List</button>
-    </div>
   </main>
 </template>
 

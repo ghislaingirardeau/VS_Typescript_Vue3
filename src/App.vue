@@ -9,14 +9,6 @@ import { userInjectionKey } from './keyInjections';
 import User from './types/User';
 import Entry from './types/Entry';
 
-// --------------DEBUGGER TEST ---------------
-const a = ref(1);
-const b = ref(2);
-
-const c = computed(() => {
-  return a.value + b.value;
-});
-
 // --------------------- PROVIDE & INJECT ------------------------
 // to make the variable accessible to all children of the component
 const user: User = reactive({

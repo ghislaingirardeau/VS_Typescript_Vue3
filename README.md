@@ -1,4 +1,6 @@
-# Vue vs code config
+# VueSchool VScode config for Vue
+
+test ahead git
 
 ## Lint with [ESLint](https://eslint.org/)
 

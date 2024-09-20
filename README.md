@@ -1,7 +1,5 @@
 # VueSchool VScode config for Vue
 
-test pull request test 2
-
 ## Lint with [ESLint](https://eslint.org/)
 
 ```sh

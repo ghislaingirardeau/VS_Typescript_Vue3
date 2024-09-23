@@ -60,6 +60,15 @@ const handleSubmit = () => {
   body.value = '';
   emoji.value = null;
 };
+
+// DIRECTIVE
+// v-click-outside est defini de manière globale dans clickOutside directive et main.ts
+// la directive peut alors etre utiliser sur plusieurs components
+// handleClickOutsideText pourra ainsi etre customiser dans les differents component ou est appelé v-click-outside
+const handleClickOutsideText = (el: HTMLElement) => {
+  alert('you clicked outside textarea');
+  el.focus();
+};
 </script>
 <template>
   <!-- si je veux appeler le emit dans le html <form class="entry-form" @submit.prevent="$emit('create', {...})"> -->
@@ -69,6 +78,7 @@ const handleSubmit = () => {
     <!-- value au lieu de v-model, pour récupérer l'event la value de l'input lors de l'event keyup -->
     <textarea
       ref="textArea"
+      v-click-outside="handleClickOutsideText"
       :value="body"
       :placeholder="`New Journal Entry for ${injectUser?.username || 'anonymous'}`"
       @keyup="handletextInput" />

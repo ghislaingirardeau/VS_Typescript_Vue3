@@ -1,6 +1,13 @@
 # VueSchool VScode config for Vue
 
-test
+Project summary:
+
+- Vs code for vue 3
+- Vue 3 typesrcipt
+- Custom snippet
+- vs code debugger
+- Vue custom directive (header component & entryEditor & main.ts)
+- git pull request
 
 ## Lint with [ESLint](https://eslint.org/)
 
@@ -68,3 +75,21 @@ extension incrementor
 ## Html
 
 p{hello} => <p>hello</p>
+
+## Git pull request
+
+Fusionne la branche principal "master" avec une branche de dev 'develop'
+
+Dans github:
+
+- Sur la branche principal, clique sur "compare" ou create "new pull request"
+- base: branche principale
+- compare: branche à merger
+- mettre le titre et comment
+- creer le pull request
+- dans le pull request: cela vérifie les conflits et si pas de conflit, "merge pull request"
+- cela créer un nouveau commit de fusion sur la branche principale (pas sur la branche locale par contre)
+
+## Vue directive - when to use
+
+**Custom directives should only be used when the desired functionality can only be achieved via direct DOM manipulation.**
